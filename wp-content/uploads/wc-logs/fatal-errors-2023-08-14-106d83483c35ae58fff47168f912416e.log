@@ -1,0 +1,12 @@
+2023-08-14T22:23:56+00:00 CRITICAL Uncaught Error: Failed opening required '/home/atrixtest/public_html/deluxe/wp-content/plugins/ti-woocommerce-wishlist/tinv-wishlists-function.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/atrixtest/public_html/deluxe/wp-content/plugins/ti-woocommerce-wishlist/ti-woocommerce-wishlist.php:208
+Stack trace:
+#0 /home/atrixtest/public_html/deluxe/wp-includes/class-wp-hook.php(310): run_tinv_wishlist('')
+#1 /home/atrixtest/public_html/deluxe/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#2 /home/atrixtest/public_html/deluxe/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/atrixtest/public_html/deluxe/wp-settings.php(495): do_action('plugins_loaded')
+#4 /home/atrixtest/public_html/deluxe/wp-config.php(102): require_once('/home/atrixtest...')
+#5 /home/atrixtest/public_html/deluxe/wp-load.php(50): require_once('/home/atrixtest...')
+#6 /home/atrixtest/public_html/deluxe/wp-cron.php(46): require_once('/home/atrixtest...')
+#7 {main}
+  thrown en /home/atrixtest/public_html/deluxe/wp-content/plugins/ti-woocommerce-wishlist/ti-woocommerce-wishlist.php en la línea 208
+

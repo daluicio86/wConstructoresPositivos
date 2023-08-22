@@ -1,0 +1,295 @@
+@import "../../css/_mixins.scss";
+@import "../../css/_theme-vars.scss";
+@import "css/_skin-vars.scss";
+
+/* Wooc */
+.woocommerce table.shop_attributes,
+.woocommerce table.shop_attributes td,
+.woocommerce table.shop_attributes th {
+	border-color: var(--theme-color-bd_color);
+}
+
+/* Content Paddings */
+.page_content_wrap {
+	padding-top: 8.8rem;
+	padding-bottom: 8.8rem;
+}
+body:not(.remove_margins) .team_page_wrap_info.comments_close {
+	margin-bottom: -8.8em;
+}
+
+/* Blogger Portfolio Style 9 */
+.sc_blogger_lay_portfolio_grid.sc_blogger_lay_portfolio_grid_grid_style_9 .sc_blogger_item .sc_blogger_item_body .post_featured .post_info_bl .sc_blogger_item_title {
+    background-color: #1B1B1B;
+}
+.sc_blogger_lay_portfolio_grid.sc_blogger_lay_portfolio_grid_grid_style_9 .sc_blogger_item .sc_blogger_item_body .post_featured .post_info_bl .post_meta .post_categories {
+    background-color: #1E1E1E;
+}
+
+/* Common styles */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range, 
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+    background-color: var(--theme-color-text_link); 
+}
+.wp-block-file__button {
+    background: none;
+}
+/* Portfolio Fullscreen Modern */
+.sc_blogger_portmodern .sc_blogger_content .sc_blogger_item:after {
+    color: var(--theme-color-text_dark);
+}
+.sc_blogger_portmodern .sc_blogger_content.active_items .sc_blogger_item:after,
+.sc_blogger_portmodern .sc_blogger_content.active_items .sc_blogger_item .sc_blogger_item_body .sc_blogger_item_title {
+    opacity: 0.4;
+}
+.sc_blogger_portmodern .decor_image_wrap .image_item.active_image {
+    opacity: 0.58;
+    transform: scale(1.01);
+}
+/* Filter by price */
+[class*="scheme_"].sidebar .widget_price_filter .price_slider_amount .button {
+    color: var(--theme-color-inverse_link);
+    border-color: var(--theme-color-alter_link2);
+    background-color: var(--theme-color-alter_link2);
+    &:hover {
+        color: var(--theme-color-inverse_link);
+        border-color: var(--theme-color-alter_hover2);
+        background-color: var(--theme-color-alter_hover2);
+    }
+}
+/* Widget Categories */
+[class*="scheme_"].sidebar .widget_product_categories, 
+[class*="scheme_"].sidebar .widget_categories {
+    ul {
+        padding-left: 0;
+        li {
+            color: var(--theme-color-alter_text);
+            a {
+                color: var(--theme-color-alter_text);
+                &:hover {
+                    color: var(--theme-color-text_link);
+                }
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/* 404 */
+.post_item_404 .post_content .all-svg {
+    display: none;
+}
+.post_item_404 .go_home {
+    border: 2px solid var(--theme-color-text_dark) !important;
+    color: var(--theme-color-text_dark) !important;
+    background-color: transparent !important;
+    &:hover {
+        color: var(--theme-color-inverse_hover) !important;
+        border-color: var(--theme-color-text_dark) !important;
+        background-color: var(--theme-color-text_dark) !important;
+    }
+}
+/* Team List */
+.sc_team_list .sc_team_item_subtitle {
+    color: var(--theme-color-text_dark);
+}
+ 
+// bg image
+.page_wrap.with_bg {
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	&.contain_size {
+		background-position: top center;
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	.page_content_wrap {
+		background-color: transparent;
+	}
+	.top_panel,
+	[class*="scheme_"].top_panel,
+	[class*="scheme_"].footer_wrap {
+		background-color: transparent;
+	}
+}
+
+/* BG Text */
+.trx_addons_bg_text.trx_addons_marquee_wrap {
+    .trx_addons_marquee_element.trx_addons_bg_text_inner {
+        padding-right: 50px !important;
+        padding-left: 0 !important;
+        .trx_addons_bg_text_char {
+            div {
+                display: inline-block;
+                margin: 0 50px 0 50px;
+                position: relative;
+                line-height: 1em;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:before {
+                    content: '\EA19';
+                    position: relative;
+                    display: inline-block;
+                    top: 0;
+                    left: 0;
+                    font-family: $theme_icons;
+                    font-size: 16px;
+                    vertical-align: middle;
+                    color: currentColor;
+                }
+            }
+        }
+    }
+}
+.bg_text_dot {
+	.trx_addons_bg_text.trx_addons_marquee_wrap {
+        .trx_addons_marquee_element.trx_addons_bg_text_inner {
+			.trx_addons_bg_text_char {
+				div {
+					display: inline-block;
+					margin: 0 40px 0 40px;
+					position: relative;
+					line-height: 1em;
+					&:first-child {
+						margin-left: 0;
+					}
+					&:before {
+						content: '';
+                        width: 10px;
+                        height: 10px;
+                        background-color: currentColor;
+                        border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* icons Creative */
+.sc_icons_creative .sc_icons_item .sc_icons_decoration_bg svg.decor-svg {
+    fill: var(--theme-color-alter_bg_color) !important;
+}
+/* Widget Banner */
+.widget_banner:not(.widget_fullwidth) .image_wrap {
+    background-color: var(--theme-color-alter_bd_color);
+}
+/* Widget Category */
+[class*="scheme_"].sidebar .widget_categories ul {
+    padding-left: 0;
+    .cat-item {
+        color: var(--theme-color-alter_text);
+        a {
+            color: var(--theme-color-alter_text);
+            &:hover {
+                color: var(--theme-color-alter_link);
+            }
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+/* Tooltip */
+[data-tooltip-text]:after {
+    background-color: var(--theme-color-text_link);
+}
+[data-tooltip-text]:before {
+    border-top-color: var(--theme-color-text_link);
+}
+
+/* Dropcap */
+.trx_addons_dropcap_style_1 {
+    background-color: var(--theme-color-text_link);
+}
+
+/* Blockquote */
+blockquote > cite:before, blockquote > p > cite:before, 
+blockquote > .wp-block-pullquote__citation:before, 
+.wp-block-quote .wp-block-quote__citation:before {
+    background-color: var(--theme-color-alter_dark);
+}
+blockquote.trx_addons_blockquote_style_1 {
+    border-left-color: var(--theme-color-text_link);
+}
+blockquote.trx_addons_blockquote_style_1:before {
+    color: var(--theme-color-alter_link);
+}
+
+/* List */
+ul[class*="trx_addons_list"] > li:before {
+    color: var(--theme-color-text_dark);
+}
+
+/* Responsive */
+@media #{$media_xxl} {
+   	/* Content Paddings */
+    .page_content_wrap {
+        padding-top: 7.1rem;
+        padding-bottom: 7.4rem;
+    }
+    body:not(.remove_margins) .team_page_wrap_info.comments_close {
+        margin-bottom: -7.4rem;
+    }
+}
+
+@media #{$media_xl} {
+    /* Content Paddings */
+    .page_content_wrap {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    body:not(.remove_margins) .team_page_wrap_info.comments_close {
+        margin-bottom: -100px;
+    }
+}
+
+@media #{$media_lg} {
+    .page_content_wrap {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    body:not(.remove_margins) .team_page_wrap_info.comments_close {
+        margin-bottom: -90px;
+    }
+}
+
+@media #{$media_tablet} {
+	
+}
+
+@media #{$media_md} {
+    .page_content_wrap {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    body:not(.remove_margins) .team_page_wrap_info.comments_close {
+        margin-bottom: -80px;
+    }
+}
+@media #{$media_mobile} {
+	
+}
+@media #{$media_sm} {
+    .page_content_wrap {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    body:not(.remove_margins) .team_page_wrap_info.comments_close {
+        margin-bottom: -60px;
+    }
+}
+
+@media #{$media_xs} { 
+	.page_content_wrap {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    body:not(.remove_margins) .team_page_wrap_info.comments_close {
+        margin-bottom: -50px;
+    }
+}
